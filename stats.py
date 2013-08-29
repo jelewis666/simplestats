@@ -18,6 +18,15 @@ def median(numlist):
     else:
        return numlist[index]
 
+def median(numlist):
+    numlist.sort()
+    length = len(numlist)
+    index = length/2
+    if length % 2 == 0:
+       return mean([numlist[index], numlist[index - 1]])
+    else:
+       return numlist[index]
+
 def mode(vals):
     """Computes the mode from a list of values."""
     pass
